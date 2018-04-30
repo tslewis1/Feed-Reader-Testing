@@ -33,7 +33,7 @@ $(function() {
          */
 
          it('URL defined for each', function() {
-         	for(i = 0; i <= 3; i++) {
+         	for(i = 0; i < allFeeds.length; i++) {
          		expect(allFeeds[i].url).toBeDefined();
          		expect(allFeeds[i].url).not.toBe("");
          	}
@@ -46,7 +46,7 @@ $(function() {
          */
 
          it('name defined for each', function() {
-         	for(i = 0; i <= 3; i++) {
+         	for(i = 0; i < allFeeds.length; i++) {
          		expect(allFeeds[i].name).toBeDefined();
          		expect(allFeeds[i].name).not.toBe("");
          	}
