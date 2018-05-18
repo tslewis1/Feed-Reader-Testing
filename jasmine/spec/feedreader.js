@@ -94,21 +94,17 @@ $(function() {
 
     describe('New Feed Selection', function() {
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+        /* Test ensures that when a new feed is loaded by the loadFeed 
+         function that the content actually changes.
          */
          beforeEach(function(done) {
-         	for(j = 0; j < allFeeds.length; j++) {
-         		var j = allFeeds[i];
-         	}
          	loadFeed(0, function() {
          		done();
          	});
          });
 
          it('should have different content when a new feed is loaded', function(done) {
-         	expect(true);
+         	expect($('.feed:first .entry').length > 0).toBe(true);
          	done();
          });
      });
