@@ -4,6 +4,8 @@ In this project you are given a web-based application that reads RSS feeds. This
 
 ## How to successfully run this application
 
+Load index.html in your favorite browser, and the tests are shown at the bottom of the page.
+
 The tests are as follows:
 	
 1. Tests to check that allFeeds variable has been defined and is not empty.
